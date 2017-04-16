@@ -1,6 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Владислав Чеменев](https://up.htmlacademy.ru/htmlcss/17/user/425067).
+* Наставник: [Алексей Белов](https://htmlacademy.ru/profile/id96038). 
 ----
 
 ---

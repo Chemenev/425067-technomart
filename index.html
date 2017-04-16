@@ -5,8 +5,429 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+	<header class="main-header">
+		<div class="top-header">
+			<div class="container">
+				<div class="header-logo">
+					<a href="#">
+						<h1>Техномарт</h1>
+					</a>
+				</div>
+				<div class="top-search">
+					<div class="search">
+						<form action="#" method="get">
+							<label class="search-label" for="search">Поиск</label><!--потом будет картинка вместо текста-->
+							<input type="search" name="search" id="search" placeholder="Поиск:">
+							
+						</form>
+					</div>
+					<a class="bookmarks" href="#">
+						Корзина: 0
+					</a>
+					<a class="basket" href="#">
+						Корзина: 0
+					</a>
+					<a class="ordering" href="#">
+						Оформить заказ
+					</a>
+				</div>
+				<section class="header-description">
+					<p>
+						Интернет-магазин<br>
+						строительных материалов<br>
+						и инструментов для ремонта
+					</p>
+				</section>
+				<div class="header-contacts">
+					<section class="contacts-phone">
+						<p>+7 (812) 555-05-55</p>
+					</section>
+					<section class="contacts-address">
+						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					</section>
+				</div>
+				<div class="user-block">
+					<a class="login" href="#">
+						Войти
+					</a>
+					<a class="registration" href="#">
+						Регистрация
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="down-header">
+			<div class="container">
+				<nav class="top-nav">
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Компания</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Спецпредложения</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Контакты</a></li>						
+					</ul>
+				</nav>
+			</div>
+		</div>	
+	</header>
+	<main class="container">
+		<div class="promo">
+			<article class="promo-item new"><!--.new стикер справа--->
+				<h2>
+					Материалы
+				</h2>
+				<img class="promo-img" src="http://placehold.it/50x70" alt="promo-item">
+				<a class="promo-btn" href="#">
+					На любой вкус
+				</a>
+			</article>
+			<article class="promo-item">
+				<h2>
+					Инструмент
+				</h2>
+				<img class="promo-img" src="http://placehold.it/50x70" alt="promo-item">
+				<a class="promo-btn" href="#">
+					На все случаи
+				</a>
+			</article>
+			<article class="promo-item">
+				<h2>
+					Техника
+				</h2>
+				<img class="promo-img" src="http://placehold.it/50x70" alt="promo-item">
+				<a class="promo-btn" href="#">
+					Для стройки
+				</a>
+			</article>
+			<article class="slider">
+				<section class="slide">
+					<div class="slide-text">
+						<h2>
+							Перфортатор
+						</h2>
+						<p>
+							Настроящие мужские игрушки
+						</p>
+						<a class="slide-btn" href="#">
+							Открыть каталог
+						</a>
+					</div>
+				</section>
+				<section class="slide">
+					<div class="slide-text">
+						<h2>
+							Дрели
+						</h2>
+						<p>
+							Соседям на радость!
+						</p>
+						<a class="slide-btn" href="#">
+							Открыть каталог
+						</a>
+					</div>
+				</section>
+			</article>
+			<article class="promo-item">
+				<h2>
+					Скидки 50%
+				</h2>
+				<img class="promo-img" src="http://placehold.it/50x70" alt="promo-item">
+				<a class="promo-btn" href="#">
+					На 350 товаров
+				</a>
+			</article>
+			<article class="promo-item">
+				<h2>
+					Доставка
+				</h2>
+				<img class="promo-img" src="http://placehold.it/50x70" alt="promo-item">
+				<a class="promo-btn" href="#">
+					Бесплатно
+				</a>
+			</article>
+		</div>
+		<div class="popular-tovar">
+			<div class="popular-tovar tit">
+				<h2>
+					Попоулярные товары:
+				</h2>
+				<a class="major-btn" href="#">
+					Все попоулярные товары
+				</a>
+			</div>
+			<article class="catalog-item">
+				<img src="http://placehold.it/200x110" alt="catalog-item">
+				<p class="name">
+					Перфоратор BOSCH BFG 9000
+				</p>
+				<p class="oldprice">
+					32500 Р.
+				</p>
+				<a class="tovar-btn" href="#">
+					25500 Р.
+				</a>
+			</article>
+			<article class="catalog-item">
+				<img src="http://placehold.it/200x110" alt="catalog-item">
+				<p class="name">
+					Перфоратор BOSCH BFG 3000
+				</p>
+				<p class="oldprice">
+					22500 Р.
+				</p>
+				<a class="tovar-btn" href="#">
+					15500 Р.
+				</a>
+			</article>
+			<article class="catalog-item">
+				<img src="http://placehold.it/200x110" alt="catalog-item">
+				<p class="name">
+					Перфоратор BOSCH BFG 6000
+				</p>
+				<p class="oldprice">
+					30500 Р.
+				</p>
+				<a class="tovar-btn" href="#">
+					25500 Р.
+				</a>
+			</article>
+			<article class="catalog-item  new">
+				<img src="http://placehold.it/200x110" alt="catalog-item">
+				<p class="name">
+					Перфоратор BOSCH BFG 2000
+				</p>
+				<p class="oldprice">
+					
+				</p>
+				<a class="tovar-btn" href="#">
+					12500 Р.
+				</a>
+			</article>
+		</div>
+		<div class="popular-brand">
+			<div class="popular-brand tit">
+				<h2>
+					Попоулярные производители:
+				</h2>
+				<a class="major-btn" href="#">
+					Все производители
+				</a>
+			</div>
+			<article class="brand-item">
+				<a href="#">
+					<img src="http://placehold.it/180x75" alt="brand-item">
+				</a>
+			</article>
+			<article class="brand-item">
+				<a href="#">
+					<img src="http://placehold.it/180x75" alt="brand-item">
+				</a>
+			</article>
+			<article class="brand-item">
+				<a href="#">
+					<img src="http://placehold.it/180x75" alt="brand-item">
+				</a>
+			</article>
+			<article class="brand-item">
+				<a href="#">
+					<img src="http://placehold.it/180x75" alt="brand-item">
+				</a>
+			</article>
+			<article class="brand-item">
+				<a href="#">
+					<img src="http://placehold.it/180x75" alt="brand-item">
+				</a>
+			</article>
+			<article class="brand-item">
+				<a href="#">
+					<img src="http://placehold.it/180x75" alt="brand-item">
+				</a>
+			</article>
+			<article class="brand-item">
+				<a href="#">
+					<img src="http://placehold.it/180x75" alt="brand-item">
+				</a>
+			</article>
+			<article class="brand-item">
+				<a href="#">
+					<img src="http://placehold.it/180x75" alt="brand-item">
+				</a>
+			</article>
+		</div>
+		<div class="servises">
+			<h2>
+				Сервисы
+			</h2>
+			<p>
+				Хороший интернет-магазин отличается от плохого не только ценами!<br>
+				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+			</p>
+			<article class="servises-block">
+				<section class="servises-block-left">
+					<ul>
+						<li>
+							<input type="radio" name="servises" id="delivery" value="Доставка" checked>
+							<label for="delivery">
+								Доставка
+							</label>
+						</li>
+						<li>
+							<input type="radio" name="servises" id="guarantee" value="Гарантия">
+							<label for="guarantee">
+								Гарантия
+							</label>
+						</li>
+						<li>
+							<input type="radio" name="servises" id="credit" value="Кредит">
+							<label for="credit">
+								Кредит
+							</label>
+						</li>
+					</ul>
+				</section>	
+				<section class="servises-block-right">
+					<ul>
+						<li>
+							<div class="delivery">
+								<p class="servises-block-tit">
+									Доставка
+								</p>
+								<p class="servises-block-des">
+									Мы с удовольствием доставим ваш товар прямо 
+									к вашему подъезду совершенно бесплатно!
+									Ведь мы неплохо заработаем, 
+									поднимая его на ваш этаж!
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="guarantee">
+								<p class="servises-block-tit">
+									Гарантия
+								</p>
+								<p class="servises-block-des">
+									Если купленный у нас товар поломается или заискрит, 
+									а также в случае пожара, спровоцированного его возгаранием,
+									вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+									Дом уж восстановите как-нибудь сами.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="credit">
+								<p class="servises-block-tit">
+									Кредит
+								</p>
+								<p class="servises-block-des">
+									Залезть в долговую яму стало проще! 
+									Кредитные консультанты придут вам на помощь.
+								</p>
+								<a class="major-btn" href="#">
+									Отправить заявку
+								</a>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</article>
+		</div>
+		<div class="about-company">
+			<section class="info">
+				<h2>КОМПАНИЯ «Техномарт»</h2>
+				<p>
+					Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
+					строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
+				</p>
+				<p>
+					Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+					Техномарт работает со многими транспортными компаниями: 
+				</p>
+				<ul>
+					<li>
+						Деловые линии
+					</li>
+					<li>
+						Автотрейдинг
+					</li>
+					<li>
+						ЖелДорЭкспедиция
+					</li>
+				</ul>
+				<a class="major-btn" href="#">
+					Подробнее о компании
+				</a>
+			</section>
+			<section class="contacts">
+				<h2>КОНТАКТЫ</h2>
+				<p>
+					Вы можете забрать товар сами,<br> 
+					заехав в наш офис:
+				</p>
+				<img src="http://placehold.it/300x160" alt="map">
+				<a class="major-btn" href="#">
+					Заблудились? Напишите НАМ!
+				</a>
+			</section>
+		</div>
+	</main>
+	<footer class="main-footer">
+		<div class="top-footer">
+			<div class="container">
+				<div class="footer-logo">
+					<a href="#">
+						<h1>Техномарт</h1>
+					</a>
+				</div>
+				<section class="footer-contacts">
+					<p>
+						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+						+7 (812) 555-05-55
+					</p>
+				</section>
+				<div class="footer-nav">
+				<nav class="footer-nav-first">
+					<ul>
+						<li><a href="#">Компания</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Контакты</a></li>						
+					</ul>
+				</nav>	
+				<nav class="footer-nav-second">
+					<ul>
+						<li><a href="#">Материалы</a></li>
+						<li><a href="#">Техника</a></li>
+						<li><a href="#">Инструмент</a></li>
+						<li><a href="#">Спецпредложения</a></li>						
+					</ul>
+				</nav>	
+				</div>
+			</div>
+		</div>
+		<div class="down-footer">
+			<div class="container">
+				<section class="footer-contacts">
+					© 2010–2017 Компания «Техномарт»<br>
+					Все права защищены
+				</section>
+				<section class="footer-social">
+					<a class="btn" href="#">Вконтакте</a>
+					<a class="btn" href="#">Фейсбук</a>
+					<a class="btn" href="#">Инстаграм</a>
+				</section>
+				<section class="feedback">
+					<p>Обратная связь:</p>
+					<a href="#">mail@htmlacademy.ru</a>
+				</section>	
+				<section class="feedback">
+					<p>Разработано -</p>
+					<a href="https://htmlacademy.ru">HTML Academy</a>
+				</section>
+			</div>
+		</div>
+	</footer>
   </body>
 </html>
