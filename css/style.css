@@ -1,9 +1,23 @@
 body{
 	font-family:"PT Sans", "Arial", serif;
+	padding:0;
+	margin:0;
 }
 a{
 	text-decoration: none;
+	color: #fff;
 }
+/*clearfix*/
+.clearfix::after {
+	content: "";
+    display: table;
+    clear: both;
+}
+.clearf {
+	clear: both;
+	}
+/*clearfix*/
+	
 /*header*/
 .header-logo h1,
 .footer-logo h1{
@@ -14,10 +28,80 @@ a{
 	font-family: "Cuprum", "Arial", serif;
 	text-transform: uppercase;
 }
-/*promo*/
-.promo{
-	background-color: #ccc;/*потом уберу, белый текст не видно*/
+/*header start*/
+.main-header {
+	background-color: #F3F7F8;
 }
+.top-background {
+	background-color: #33445A;
+}
+.container {
+	background-color: rgba(255, 208, 20, 0.3);
+	width:940px;
+	margin:0 auto;
+	padding: 0 10px;
+}	
+.header-logo {
+	float:left;
+	width:220px;
+	background-color: #FF5357;
+	margin-bottom:45px;
+}
+.top-search {
+	float:left;
+	width:710px;
+	margin-left:10px;
+	background-color: #FF5357;
+	margin-bottom:45px;
+}
+.search {
+	display:inline-block;
+}
+.header-description {
+	float:left;
+	width: 300px;
+	background-color: #EFF3F4;
+}
+.header-contacts {
+	float:left;
+	width:300px;
+	background-color: #EFF3F4;
+	margin-left:20px;
+}
+.user-block {
+	float:right;
+	width:300px;
+	background-color: #EFF3F4;
+	margin-bottom:45px;
+}
+.user-block p {
+	display:inline-block;
+}
+.user-block li,
+.breadcrumb li {
+	display:inline;
+}
+.breadcrumb {
+	float:left;
+	min-width:400px;
+	background-color: #fff;
+	margin-bottom:10px;
+}
+.breadcrumb a {
+	color: #000;
+}
+.top-nav {
+	float:left;
+	width:940px;
+	background-color:#3B516A;
+	margin-bottom:60px;
+}
+.top-nav li{
+	display:inline;
+}
+/*header end*/
+/*promo start*/
+
 .promo h2{
 	font-size: 24px;
 	line-height: 30px;
@@ -33,7 +117,116 @@ a{
 	font-family: "Cuprum", "Arial", serif;
 	text-transform: uppercase;
 }
+.promo-item { /*не могу отцентровать эти блоки*/
+	/*float:left;*/
+	display:inline-block;
+	vertical-align:top;
+	width:274px;
+	height:98px;
+	margin-left:5px;
+	margin-bottom:5px;
+	padding:13px;
+	background-color: #FFBF47;
+}
+.promo-item h2 {
+	margin:0;
+}
+.promo-img {
+	position:relative;
+	top:-22px;
+
+}
+.slide-text1,
+.slide-text2 {
+	float:left;
+	width: 620px;
+	height:267px;
+	background-color: #D98FD5;
+}
+.slide-text2 {
+	display:none;
+}
+.slide ul {
+	padding:0;
+	margin:0;
+}
+.slide li{
+	display:inline;
+}
+.control-tech {
+	display:none;
+}
+.slide-control{
+	float:left;
+	width:620px;
+	background-color:#8ED78F;
+	top:-80px;
+	position:relative;
+}
+.popular-tovar-title,
+.popular-brand-title {
+	float:left;
+	width:940px;
+	height:88px;
+	background-color:#F9F5F0;
+	margin-bottom:20px;
+	margin-top: 20px;
+}
+.brand-item {
+	display:inline-block;
+	vertical-align:top;
+	margin:5px;
+	width: 220px;
+	height:145px;
+	background-color: #ccc;
+}
+.popular-brand {
+	margin-bottom:80px;
+}
+.servises {
+	padding-top:60px;
+}
+.servises-block-left {
+	float:left;
+	width:300px;
+}
+.servises-block-right {
+	float:right;
+	width:620px;
+}
+.info {
+	float:left;
+	width:540px;
+	background-color: #7F99F9;
+}
+.contacts {
+	float:right;
+	width:300px;
+	background-color: #7F99F9;
+}
+.about-company {
+	margin-bottom:60px;
+}
+/*promo end*/
 /*catalog*/
+.catalog {
+	float:right;
+	width:700px;
+	font-size:0;
+}
+.catalog-item { /*не знаю как правильно убрать левый, правый margin для крайних элементов каталога*/
+	display:inline-block;
+	vertical-align:top;
+	width: 220px;
+	height:315px;
+	background-color:#fff;
+	margin:5px;
+	font-size:14px;
+}
+.catalog-title {
+	padding: 5px 30px;
+	margin-bottom:20px;
+}
 .catalog-title h2{
 	font-size: 30px;
 	line-height: 30px;
@@ -42,3 +235,66 @@ a{
 	font-family: "Cuprum", "Arial", serif;
 	
 }
+.catalog-description{
+	float:left;
+	width:940px;
+}
+.blue {
+	background-color:#F4F8F9;
+}
+
+.pagination {
+	float:left;
+	min-width:300px;
+	font-size:15px;
+	margin-bottom:20px;
+}
+.filter {
+	float:left;
+	width:220px;
+	background-color: #F7F3EC;
+}
+.sorting {
+	float:right;
+	width:690px;
+	background-color: #F7F3EC;
+	padding:10px;
+}
+/*footer-start*/
+.top-footer {
+	background-color: #3D546E;
+}
+.footer-logo {
+	float:left;
+	width:220px;
+	background-color: #FF5357;
+	margin-bottom:30px;
+}
+.footer-contacts {
+	float:left;
+	width: 380px;
+}
+.footer-nav {
+	float:right;
+}
+.footer-nav li {
+	display:inline;
+}
+.footer-copy {
+	float:left;
+	width:320px;
+	margin-top:35px;
+}
+.footer-social {
+	float:left;
+	width:180px;
+	margin-top:35px;
+}
+.down-footer {
+	background-color: #304055;
+}
+.powered {
+	float:right;
+	width:310px;
+}
+/*footer-end*/
