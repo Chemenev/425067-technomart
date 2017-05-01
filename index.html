@@ -22,7 +22,7 @@
 				<div class="top-search">
 					<div class="search">
 						<form action="#" method="get">
-							<label class="search-label" for="search">Поиск</label><!--потом будет картинка вместо текста-->
+							<label class="search-label" for="search"></label>
 							<input type="search" name="search" id="search" placeholder="Поиск:">
 							
 						</form>
@@ -114,12 +114,12 @@
 						<li>
 							<div class="slide-text1 stock-item">
 								<h2>
-									Перфортатор
+									Перфортаторы
 								</h2>
-								<p>
+								<span>
 									Настроящие мужские игрушки
-								</p>
-								<a class="slide-btn" href="#">
+								</span>
+								<a class="major-btn" href="#">
 									Открыть каталог
 								</a>
 							</div>
@@ -129,10 +129,10 @@
 								<h2>
 									Дрели
 								</h2>
-								<p>
+								<span>
 									Соседям на радость!
-								</p>
-								<a class="slide-btn" href="#">
+								</span>
+								<a class="major-btn" href="#">
 									Открыть каталог
 								</a>
 							</div>
@@ -141,25 +141,25 @@
 				</div>
 				<div class="slide-control">
 					<div class="control-tech">
-						<input type="radio" name="toggle" id="toggle-1"> 
+						<input type="radio" name="toggle" id="toggle-1" checked> 
 						<input type="radio" name="toggle" id="toggle-2"> 
 					</div>
-					<div class="control-radio">
+					<!--<div class="control-radio">
 						<label for="toggle-1">
-							o<!--потом заменятся-->
+							o
 						</label>
 						<label for="toggle-2">
 							o
 						</label>
-					</div>
+					</div>-->
 					<div class="control-arrow-left">
 						<label for="toggle-1">
-							<
+							<img src="img/left.png" alt="left">
 						</label>
 					</div>
 					<div class="control-arrow-right">
 						<label for="toggle-2">
-							>
+							<img src="img/right.png" alt="right">
 						</label>
 					</div>
 				</div>
@@ -331,39 +331,40 @@
 					<ul>
 						<li>
 							<div class="delivery">
-								<p class="servises-block-tit">
+								<span class="servises-block-title">
 									Доставка
-								</p>
-								<p class="servises-block-des">
-									Мы с удовольствием доставим ваш товар прямо 
-									к вашему подъезду совершенно бесплатно!
-									Ведь мы неплохо заработаем, 
+								</span>
+								<span class="servises-block-description">
+									Мы с удовольствием доставим ваш товар прямо <br>
+									к вашему подъезду совершенно бесплатно!<br>
+									Ведь мы неплохо заработаем, <br>
 									поднимая его на ваш этаж!
-								</p>
+								</span>
 							</div>
 						</li>
 						<li>
 							<div class="guarantee">
-								<p class="servises-block-tit">
+								<span class="servises-block-title">
 									Гарантия
-								</p>
-								<p class="servises-block-des">
-									Если купленный у нас товар поломается или заискрит, 
-									а также в случае пожара, спровоцированного его возгаранием,
-									вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+								</span>
+								<span class="servises-block-description">
+									Если купленный у нас товар поломается или заискрит, <br>
+									а также в случае пожара, спровоцированного его возгаранием,<br>
+									вы всегда можете быть уверены в нашей гарантии. Мы обменяем 
+									сгоревший товар на новый. <br>
 									Дом уж восстановите как-нибудь сами.
-								</p>
+								</span>
 							</div>
 						</li>
 						<li>
 							<div class="credit">
-								<p class="servises-block-tit">
+								<span class="servises-block-title">
 									Кредит
-								</p>
-								<p class="servises-block-des">
-									Залезть в долговую яму стало проще! 
+								</span>
+								<span class="servises-block-description">
+									Залезть в долговую яму стало проще! <br>
 									Кредитные консультанты придут вам на помощь.
-								</p>
+								</span>
 								<a class="major-btn" href="#">
 									Отправить заявку
 								</a>
@@ -377,15 +378,15 @@
 		<div class="about-company">
 			<div class="container clearfix">
 			<section class="info">
-				<h2>КОМПАНИЯ «Техномарт»</h2>
+				<h2>Компания «Техномарт»</h2>
 				<p>
 					Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
 					строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
 				</p>
-				<p>
+				<span>
 					Мы можем доставить ваш товар в самые отдаленные точки России!<br>
 					Техномарт работает со многими транспортными компаниями: 
-				</p>
+				</span>
 				<ul>
 					<li>
 						Деловые линии
@@ -426,14 +427,6 @@
 						</a>
 					</h1>	
 				</div>
-				<div class="clearf"></div>
-				<section class="footer-contacts">
-					<p>
-						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-						+7 (812) 555-05-55
-					</p>
-				</section>
-				<div class="footer-nav">
 				<nav class="footer-nav-first">
 					<ul>
 						<li><a href="#">Компания</a></li>
@@ -443,6 +436,13 @@
 						<li><a href="#">Контакты</a></li>						
 					</ul>
 				</nav>	
+				<div class="clearf"></div>
+				<section class="footer-contacts">
+					<span>
+						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+						+7 (812) 555-05-55
+					</span>
+				</section>
 				<nav class="footer-nav-second">
 					<ul>
 						<li><a href="#">Материалы</a></li>
@@ -451,7 +451,6 @@
 						<li><a href="#">Спецпредложения</a></li>						
 					</ul>
 				</nav>	
-				</div>
 				<div class="clearf"></div>
 			</div>
 		</div>
@@ -468,11 +467,11 @@
 				</section>
 				<div class="powered">
 				<section class="feedback">
-					<p>Обратная связь:</p>
+					<span>Обратная связь:</span>
 					<a href="#">mail@htmlacademy.ru</a>
 				</section>	
 				<section class="powered-by">
-					<p>Разработано -</p>
+					<span>Разработано -</span>
 					<a href="https://htmlacademy.ru">HTML Academy</a>
 				</section>
 				</div>
