@@ -86,8 +86,23 @@ float:left;
   height: 18px;
   background:  url("img/spritesheet.png") no-repeat;
   background-position: -66px -32px;
+  opacity:0.3;
 }
-.search-label::before:focus {
+.search input[type="search"]:hover {
+	background-color:#212A3A;
+}
+.search-label:hover::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 13px;
+  width: 18px;
+  height: 18px;
+  background:  url("img/spritesheet.png") no-repeat;
+  background-position: -66px -32px;
+  opacity:1;
+}
+.search input[type="search"]:focus::before{
   content: "";
   position: absolute;
   top: 12px;
@@ -96,7 +111,6 @@ float:left;
   height: 18px;
   background:  url("img/spritesheet.png") no-repeat;
   background-position: -65px -59px;
-  z-index:5;
 }
 .search {
 	display:inline-block;
@@ -107,14 +121,19 @@ float:left;
 .search input[type="search"]{
 	background-color: #33445A;
 	border:none;
-	
-	padding:14px 36px 13px 56px;
+	font-size:17px;
+	padding:11px 7px 12px 46px;
 	}
 .search input[type="search"]:focus {
 	background-color: #fff;
 	color: #000;
 	outline:none;
 }	
+.search input.search-row:focus {
+  /*background-image: url("img/search1.png");
+  background-repeat: no-repeat;
+  background-position: 10px 10px;*/
+}
 .search input[type="search"]::-webkit-input-placeholder {color:#fff;font-size:17px;}
 .search input[type="search"]::-moz-placeholder          {color:#fff;font-size:17px;}/* Firefox 19+ */
 .search input[type="search"]:-moz-placeholder           {color:#fff;font-size:17px;}/* Firefox 18- */
@@ -677,10 +696,11 @@ a.major-btn:active,
 	display:inline-block;
 	vertical-align:top;
 	margin-bottom:20px;
-	width: 220px;
-	height:145px;
-	background-color: #ccc;
+	width: 218px;
+	height:143px;
+	background-color: #fff;
 	background-position:center;
+	border: 1px solid #E7E7E7
 }
 .brand-item:hover {
 	-webkit-box-shadow: 0px 10px 25px 0px rgba(41,52,73,1);
@@ -691,13 +711,15 @@ a.major-btn:active,
 	-webkit-box-shadow: 0px 4px 10px 0px rgba(41,52,73,1);
 	-moz-box-shadow: 0px 4px 10px 0px rgba(41,52,73,1);
 	box-shadow: 0px 4px 10px 0px rgba(41,52,73,1);
+	opacity:0.3;
 }
 
 .brand-item img {
-	/*position:absolute;*/
-	display:inline-block;
-	vertical-align:middle;
-	text-align:center;
+	background-color: #ccc;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform:translateX(-50%) translateY(-50%);
 	
 }
 .servises {
@@ -1403,27 +1425,67 @@ input.filter-bg:nth-child(2) {
 	float:left;
 	width:180px;
 	font-size:0;
+	margin-left:66px;
 }
 .footer-social a {
+	position:relative;
 	display:inline-block;
 	vertical-align:baseline;
 	text-align:center;
-	padding:8px;
+	width:42px;
+	height:42px;
+	/*padding:8px;*/
 	border:0;
 	margin-left:5px;
 	border-radius:50px;
 	background-color: rgba(0, 0, 0, 0.3);
 	vertical-align:center;
 }
-.footer-social a :hover {
-	background-color:#EE3643;
-	border-radius:50px;
+.footer-social a:hover {
+	background-color: #EE3643;
 }
 .footer-social img {
 	display:inline-block;
 	vertical-align:center;
 	text-align:center;
 }
+.img-vk::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top:-12px;
+  left: 50%;
+  margin-left:-12px;
+  width: 25px;
+  height: 25px;
+  background:  url("img/spritesocial.png") no-repeat;
+  background-position: -5px -75px;
+}
+.img-face::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top:-12px;
+  left: 50%;
+  margin-left:-12px;
+  width: 25px;
+  height: 25px;
+  background:  url("img/spritesocial.png") no-repeat;
+  background-position: -5px -5px;
+}
+.img-inst::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top:-12px;
+  left: 50%;
+  margin-left:-12px;
+  width: 25px;
+  height: 25px;
+  background:  url("img/spritesocial.png") no-repeat;
+  background-position: -5px -40px;
+}
+
 .powered {
 	float:right;
 	width:310px;
@@ -1432,6 +1494,7 @@ input.filter-bg:nth-child(2) {
 	display:inline-block;
 	float:left;
 	width:140px;
+	margin-left:24px;
 }
 .powered-by {
 	display:inline-block;
