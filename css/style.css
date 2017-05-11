@@ -1308,7 +1308,15 @@ input.filter-bg:nth-child(2) {
 .sorting a:nth-child(3) {
 	margin-right:62px;
 }
-
+.prise-range {
+	display: flex;
+	justify-content: space-between;
+	
+}
+.prise-range span {
+	display:inline-block;
+	padding-top: 8px;
+}
 .sotring-value-up::before {
   content: "";
   position: absolute;
@@ -1334,8 +1342,8 @@ input.filter-bg:nth-child(2) {
 .sotring-value-up:hover::before {
   content: "";
   position: absolute;
-  bottom: 15px;
-  left: 643px;
+  bottom: 14px;
+  left: 640px;
   width: 10px;
   height: 11px;
   background: url("img/spritefilter.png") no-repeat;
