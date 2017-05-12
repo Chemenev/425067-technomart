@@ -537,7 +537,7 @@ a.ordering{
 	display:inline-block;
 	text-align:center;
 	vertical-align:baseline;
-	padding-top:20px;
+	padding-top:20px; 
 	flex-grow:1;
 }
 .top-nav a:hover {
