@@ -546,23 +546,23 @@ a.ordering{
 .top-nav a:active {
 	background-color:#293449;
 	color:#8E939C;
-}
+} 
 /*header end*/
 /*promo start*/
 .promo {
 	margin-top:59px;
 	margin-bottom:33px;
-}
+} 
 .promo h2{
 	font-size: 24px;
 	line-height: 30px;
 	color: #fff;
 	font-weight: bold;
 	font-family: "Cuprum", "Arial", serif;
-}
+} 
 .stock-item{
 	float:left;
-}
+} 
 .promo-item {
 	width:253px;
 	height:78px;
