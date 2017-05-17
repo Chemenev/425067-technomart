@@ -29,12 +29,11 @@ body{
 }
 .top-background {
 	background-color: #293449;
-		margin-bottom: 46px;
+	margin-bottom: 46px;
 }
 .container {
 	width: 940px;
 	margin: 0 auto;
-	/*padding: 0 10px;*/
 }	
 .header-logo {
 	float:left;
@@ -75,17 +74,25 @@ body{
 	border: 0; 
 	cursor: pointer;
 	position: absolute;
-}
-.search-label::before {
 	content: "";
 	position: absolute;
 	bottom: 13px;
 	left: 18px;
 	width: 18px;
 	height: 18px;
+	opacity: 0.3;
+	z-index: 5;
+}
+.search-label::before {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 18px;
+	height: 18px;
 	background: transparent url("../img/spritesheet.png") no-repeat;
 	background-position: -66px -32px;
-	opacity: 0.3;
+	opacity: 0.8;
 	z-index: 5;
 }
 .search input[type="search"]:hover {
@@ -94,8 +101,8 @@ body{
 .search-label:hover::before {
 	content: "";
 	position: absolute;
-	bottom: 14px;
-	left: 18px;
+	bottom: 0px;
+	left: 0px;
 	width: 18px;
 	height: 18px;
 	background: transparent url("../img/spritesheet.png") no-repeat;
@@ -105,8 +112,8 @@ body{
 input[type="search"]:focus+.search-label::before {
 	content: "";
 	position: absolute;
-	bottom: 13px;
-	left: 18px;
+	bottom: 0px;
+	left: 0px;
 	width: 18px;
 	height: 18px;
 	background: transparent url("../img/search1.png") no-repeat;
